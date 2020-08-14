@@ -10,6 +10,11 @@
       </ul>
     </div>
   <% end %>
+  <%= simple_form_for(article) do |f| %>
+  <!-- [...] -->
+  <%= f.input :photo, as: :file %>
+  <!-- [...] -->
+<% end %>
 
   <div class="field">
     <%= form.label :title %>

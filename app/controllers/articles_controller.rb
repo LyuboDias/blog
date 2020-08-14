@@ -10,6 +10,9 @@ class ArticlesController < ApplicationController
   def show
   end
 
+  def article_params
+    params.require(:article).permit(:title, :body, :photo)
+  end
   # GET /articles/new
   def new
     @article = Article.new
