@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
+<div class="container d-flex justify-content-center">
 
-<h1>Articles</h1>
+<h1 class="text-center" >Articles</h1>
 
 <table>
   <thead>
@@ -25,5 +25,8 @@
 </table>
 
 <br>
+<%= cl_image_tag("we3wsvogp18mozptmrxu",
+      width: 400, height: 300 ) %>
 
 <%= link_to 'New Article', new_article_path %>
+</div>
